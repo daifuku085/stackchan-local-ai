@@ -1,0 +1,78 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+config.yaml
+.config.yaml
+**/config.local.yaml
+**/*secret*
+**/*token*
+**/credentials*
+
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ESP-IDF build output
+build/
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+
+# CMake / Ninja
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+.ninja_deps
+.ninja_log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Docker / local data
+data/
+models/
+*.gguf
+*.bin
+*.onnx
+*.pt
+*.pth
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives / large generated artifacts
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Optional local screenshots / recordings
+recordings/
+captures/
