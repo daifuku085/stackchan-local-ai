@@ -9,7 +9,7 @@
 
 LLM:
   type: OllamaLLM
-  model: qwen2.5:1.5b
+  model: qwen3:4b-q4_K_M
   base_url: http://host.docker.internal:11434
 
 ASR:
