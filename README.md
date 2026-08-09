@@ -72,7 +72,7 @@ The ESP32-S3 acts as the user-facing voice interface.
 * **FunASR / SenseVoiceSmall** for local speech recognition
 * **Ollama** for local LLM inference
 * **Qwen3 4B Q4_K_M** as the initial local language model
-* A local text-to-speech engine
+* **Piper-Plus with the Tsukuyomi-chan voice model** for local text-to-speech engine
 
 The AI server runs on the local network, so no AI inference depends on a cloud service.
 
