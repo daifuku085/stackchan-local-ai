@@ -88,7 +88,7 @@ The ASR stage converts the user's post-wake speech into text.
 Current implementation:
 
 - Ollama
-- qwen2.5:1.5b
+- qwen3:4b-q4_K_M
 
 The initial goal is a lightweight model that runs acceptably on modest local
 hardware. Larger or alternative models can be evaluated later.
