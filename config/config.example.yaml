@@ -1,0 +1,29 @@
+# Example configuration for the local AI server.
+# Copy this file to your actual configuration file and adjust it for your environment.
+#
+# IMPORTANT:
+# - Do not commit API keys, tokens, passwords, or private network details.
+# - The exact key names may differ depending on your xiaozhi-esp32-server version.
+# - This file documents the intended local architecture rather than replacing
+#   the upstream project's official configuration reference.
+
+LLM:
+  type: OllamaLLM
+  model: qwen2.5:1.5b
+  base_url: http://host.docker.internal:11434
+
+ASR:
+  type: FunASR
+  model: SenseVoiceSmall
+
+# Example connection settings for the ESP32-S3 client.
+# Replace the placeholder with the actual local server address when configuring
+# the device. Avoid committing a private LAN address if you do not want it public.
+WebSocket:
+  url: ws://<LOCAL_SERVER_IP>:8000/xiaozhi/v1/
+
+# TTS is intentionally left generic because the project is evaluating
+# local Japanese speech synthesis options.
+TTS:
+  type: local
+  engine: <LOCAL_TTS_ENGINE>
