@@ -31,7 +31,7 @@ project.
 ### Local LLM
 
 - Ollama installed and tested.
-- Initial model: `qwen2.5:1.5b`.
+- Initial model: `qwen3:4b-q4_K_M`.
 - Ollama REST response confirmed.
 - `xiaozhi-esp32-server` configured to use the local Ollama endpoint.
 
@@ -90,7 +90,7 @@ Goals:
 - [x] Local WebSocket communication
 - [x] FunASR / SenseVoiceSmall
 - [x] Ollama
-- [x] qwen2.5:1.5b
+- [x] qwen3:4b-q4_K_M
 - [x] Basic voice interaction
 - [ ] Custom Japanese WakeNet model
 - [ ] 「コギト・エルゴ・スム」 local wake detection
